@@ -172,9 +172,10 @@ Use the filterByWord function below to do the following:
 
 function filterByWord(array, filterWord){
     let filteredArray = [];
+    let i = filterWord;
     for(i = 0; i < array.length; i++){
-        if(array[i].includes(filterWord)){
-            filteredArray.push(array[i])
+        if(array.includes(filterWord)){
+            filteredArray.push(array[filterWord])
         }
     }
     return filteredArray;
